@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evandro Moresco — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div class="scanline"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span>//</span> evandro.moresco</div>
+  <ul class="nav-links">
+    <li><a href="#about"      data-i18n="nav.about">sobre</a></li>
+    <li><a href="#skills"     data-i18n="nav.skills">skills</a></li>
+    <li><a href="#experience" data-i18n="nav.experience">experiência</a></li>
+    <li><a href="#projects"   data-i18n="nav.projects">projetos</a></li>
+    <li><a href="#certs"      data-i18n="nav.certs">certs</a></li>
+    <li><a href="#contact"    data-i18n="nav.contact">contato</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-toggle" id="lang-btn" onclick="toggleLang()" aria-label="Switch language">
+      <span class="lang-flag">🇺🇸</span><span class="lang-text">EN</span>
+    </button>
+    <a href="#contact" class="nav-cta" data-i18n="nav.cta">Contato</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="status-dot"></span>
+      <span data-i18n="hero.available">Disponível para oportunidades CLT/PJ remoto</span>
+    </div>
+
+    <h1 class="hero-name">
+      Evandro<br>
+      <span class="line2">Moresco</span>
+    </h1>
+
+    <div class="hero-role-primary">
+      <span class="role-label" data-i18n="hero.role.fs">Full Stack</span>
+      <span class="role-label accent" data-i18n="hero.role.dev">Developer</span>
+    </div>
+
+    <div class="hero-role-secondary">
+      <span class="role-badge" data-i18n="hero.badge1">Analista de TI</span>
+      <span class="role-sep">+</span>
+      <span class="role-badge" data-i18n="hero.badge2">Cibersegurança</span>
+      <span class="role-sep">+</span>
+      <span class="role-badge" data-i18n="hero.badge3">Founder Oggi Sec</span>
+    </div>
+
+    <p class="hero-subtitle">
+      <span data-i18n="hero.subtitle">Construo aplicações do front ao servidor com visão real de segurança.</span><br>
+      <span class="typed-text" id="typed-role">React · Node.js · TypeScript · Python</span>
+      <span class="cursor-blink"></span>
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary"><span data-i18n="hero.btn1">Ver Projetos</span></a>
+      <a href="#contact"  class="btn-secondary" data-i18n="hero.btn2">Entre em Contato</a>
+    </div>
+  </div>
+
+  <!-- PHOTO -->
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <div class="photo-glow"></div>
+      <div class="photo-border-anim"></div>
+      <img src="assets/evandro.jpg" alt="Evandro Moresco — Full Stack Developer" class="hero-photo" />
+      <div class="photo-overlay"></div>
+      <div class="photo-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.photo.badge">Full Stack Dev</span>
+      </div>
+    </div>
+    <div class="hero-stats-col">
+      <div class="stat">
+        <div class="stat-num">7+</div>
+        <div class="stat-label" data-i18n="hero.stat1.label">Anos em TI</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2019</div>
+        <div class="stat-label" data-i18n="hero.stat2.label">Oggi Sec</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5+</div>
+        <div class="stat-label" data-i18n="hero.stat3.label">Certs</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span data-i18n="hero.scroll">Scroll para explorar</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label" data-i18n="about.label">whoami</div>
+    <h2 class="section-title" data-i18n-html="about.title">Dev que entende<br><em>cada camada</em> do sistema</h2>
+    <p class="about-text" data-i18n-html="about.p1">
+      Comecei na TI fazendo manutenção de hardware e redes, passei pelo Exército Brasileiro administrando sistemas Linux em infraestrutura crítica, e hoje construo aplicações full stack com visão real de segurança — do código ao servidor.
+    </p>
+    <p class="about-text" data-i18n-html="about.p2">
+      Sou fundador da <strong>Oggi Sec</strong>, empresa de segurança da informação e gestão de TI em Piraju-SP, onde aplico diariamente a combinação de desenvolvimento e cibersegurança que poucos profissionais realmente possuem.
+    </p>
+    <div class="about-highlights">
+      <div class="highlight-item">
+        <div class="highlight-icon">🪖</div>
+        <div class="highlight-text">
+          <strong data-i18n="about.h1.title">Exército Brasileiro</strong> — <span data-i18n="about.h1.text">Administração de sistemas Linux em infraestrutura crítica nacional.</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🛡️</div>
+        <div class="highlight-text">
+          <strong data-i18n="about.h2.title">Founder · Oggi Sec (2019)</strong> — <span data-i18n="about.h2.text">Segurança da informação e gestão de TI com foco em OWASP, Pentest e DevSecOps.</span>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">🎓</div>
+        <div class="highlight-text">
+          <strong data-i18n="about.h3.title">Engenharia de Software · UNICESUMAR</strong> — <span data-i18n="about.h3.text">Base sólida aliada à prática de 7+ anos no mercado real.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-visual reveal">
+    <div class="about-card">
+      <div class="terminal-header">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-title">evandro@oggi-sec ~ $</div>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">❯</span> <span class="t-cmd">cat ./profile.json</span></div>
+        <br>
+        <div><span class="t-key">"name"</span><span class="t-val">: "Evandro Moresco",</span></div>
+        <div><span class="t-key">"focus"</span><span class="t-val">: <span style="color:var(--accent)">"Full Stack Developer"</span>,</span></div>
+        <div><span class="t-key">"also"</span><span class="t-val">: ["Analista de TI", "Cibersegurança"],</span></div>
+        <div><span class="t-key">"location"</span><span class="t-val">: "Piraju-SP, Brasil",</span></div>
+        <div><span class="t-key">"stack"</span><span class="t-val">: ["React", "Node.js", "TS", "Python"],</span></div>
+        <div><span class="t-key">"experience"</span><span class="t-val">: "7+ anos",</span></div>
+        <div><span class="t-key">"looking_for"</span><span class="t-val">: "<span data-i18n="about.terminal.looking">CLT Full Stack</span>",</span></div>
+        <div><span class="t-key">"status"</span><span class="t-val">: <span style="color:var(--accent3)" data-i18n="about.terminal.status">"disponível ✓"</span></span></div>
+        <br>
+        <div><span class="t-comment">// CS50 Harvard · Univ. Maryland · IBSEC · Acadi-TI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="skills-header reveal">
+      <div class="section-label" data-i18n="skills.label">stack técnica</div>
+      <h2 class="section-title" data-i18n-html="skills.title">O que eu <em>sei fazer</em></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">⚡</div>
+        <div class="skill-cat-title">Frontend</div>
+        <div class="skill-cat-sub" data-i18n="skills.fe.sub">Interfaces &amp; UX</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">React</span>
+          <span class="skill-tag hot">JavaScript</span>
+          <span class="skill-tag hot">TypeScript</span>
+          <span class="skill-tag hot">HTML5</span>
+          <span class="skill-tag hot">CSS3</span>
+          <span class="skill-tag">Bootstrap 5</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">⚙️</div>
+        <div class="skill-cat-title">Backend</div>
+        <div class="skill-cat-sub" data-i18n="skills.be.sub">APIs &amp; Servidores</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Node.js</span>
+          <span class="skill-tag hot">Python</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Firebase</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🛡️</div>
+        <div class="skill-cat-title">Cybersecurity</div>
+        <div class="skill-cat-sub" data-i18n="skills.sec.sub">Ofensivo &amp; Defensivo</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">OWASP Top 10</span>
+          <span class="skill-tag hot">Pentest</span>
+          <span class="skill-tag hot">DevSecOps</span>
+          <span class="skill-tag">Análise de Vulnerab.</span>
+          <span class="skill-tag">SOC</span>
+          <span class="skill-tag">SIEM</span>
+          <span class="skill-tag">Kali Linux</span>
+          <span class="skill-tag">Metasploit</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🐧</div>
+        <div class="skill-cat-title">Infrastructure</div>
+        <div class="skill-cat-sub" data-i18n="skills.inf.sub">Servidores &amp; Redes</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Linux (Ubuntu/Debian)</span>
+          <span class="skill-tag hot">Docker</span>
+          <span class="skill-tag">Nginx</span>
+          <span class="skill-tag">Apache</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">SSH / VPN</span>
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">Firewall</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">🤖</div>
+        <div class="skill-cat-title">Tools &amp; AI</div>
+        <div class="skill-cat-sub" data-i18n="skills.ai.sub">Produtividade &amp; Automação</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot">OpenCV</span>
+          <span class="skill-tag hot">Python Scripts</span>
+          <span class="skill-tag">Automation</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Burp Suite</span>
+          <span class="skill-tag">Wireshark</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-icon">📋</div>
+        <div class="skill-cat-title">Soft Skills</div>
+        <div class="skill-cat-sub" data-i18n="skills.soft.sub">Liderança &amp; Gestão</div>
+        <div class="skill-tags">
+          <span class="skill-tag hot" data-i18n="skills.soft.t1">Liderança Técnica</span>
+          <span class="skill-tag" data-i18n="skills.soft.t2">Gestão de Projetos</span>
+          <span class="skill-tag" data-i18n="skills.soft.t3">Comunicação</span>
+          <span class="skill-tag" data-i18n="skills.soft.t4">Resolução de Problemas</span>
+          <span class="skill-tag" data-i18n="skills.soft.t5">Autodidatismo</span>
+          <span class="skill-tag" data-i18n="skills.soft.t6">Documentação</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-label" data-i18n="exp.label">trajetória</div>
+    <h2 class="section-title" data-i18n-html="exp.title">Onde construí<br><em>experiência real</em></h2>
+  </div>
+  <div class="exp-layout">
+    <div class="exp-nav">
+      <div class="exp-nav-item active" onclick="showExp(0,this)" data-i18n="exp.tab0">Oggi Sec</div>
+      <div class="exp-nav-item" onclick="showExp(1,this)" data-i18n="exp.tab1">Exército Brasileiro</div>
+      <div class="exp-nav-item" onclick="showExp(2,this)" data-i18n="exp.tab2">TI Generalista</div>
+      <div class="exp-nav-item" onclick="showExp(3,this)" data-i18n="exp.tab3">Freelancer Dev</div>
+    </div>
+    <div class="exp-entries">
+
+      <div class="exp-entry active">
+        <div class="exp-role"    data-i18n="exp.0.role">Fundador &amp; Analista Sênior</div>
+        <div class="exp-company" data-i18n="exp.0.company">Oggi Sec — Piraju, SP</div>
+        <div class="exp-period"  data-i18n="exp.0.period">2019 — Presente · 5+ anos</div>
+        <p class="exp-desc"      data-i18n="exp.0.desc">Fundei e opero a Oggi Sec…</p>
+        <div class="exp-achievements">
+          <div class="exp-ach" data-i18n="exp.0.a1">Condução de pentests e análises de vulnerabilidade com base em OWASP Top 10</div>
+          <div class="exp-ach" data-i18n="exp.0.a2">Implementação de políticas de segurança, controle de acesso e monitoramento (SOC)</div>
+          <div class="exp-ach" data-i18n="exp.0.a3">Desenvolvimento de sistemas web para clientes utilizando React, Node.js, JavaScript, Bootstrap e PHP</div>
+          <div class="exp-ach" data-i18n="exp.0.a4">Consultoria em infraestrutura Linux, redes e hardening de servidores</div>
+          <div class="exp-ach" data-i18n="exp.0.a5">Gestão completa do negócio: vendas, proposta técnica, entrega e suporte pós-venda</div>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-role"    data-i18n="exp.1.role">Administrador de Sistemas Linux</div>
+        <div class="exp-company" data-i18n="exp.1.company">Exército Brasileiro</div>
+        <div class="exp-period"  data-i18n="exp.1.period">Serviço Militar · Infraestrutura Crítica</div>
+        <p class="exp-desc"      data-i18n="exp.1.desc">Responsável pela administração…</p>
+        <div class="exp-achievements">
+          <div class="exp-ach" data-i18n="exp.1.a1">Administração e manutenção de servidores Linux (Debian/Ubuntu) em infraestrutura crítica</div>
+          <div class="exp-ach" data-i18n="exp.1.a2">Gerenciamento de backups, atualizações e patches de segurança em ambiente controlado</div>
+          <div class="exp-ach" data-i18n="exp.1.a3">Configuração de redes, firewalls e protocolos de acesso seguro (SSH, VPN)</div>
+          <div class="exp-ach" data-i18n="exp.1.a4">Trabalho sob pressão em contextos de missão crítica com zero margem para erros</div>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-role"    data-i18n="exp.2.role">Analista de TI &amp; Suporte N2/N3</div>
+        <div class="exp-company" data-i18n="exp.2.company">Atuação como Técnico Generalista</div>
+        <div class="exp-period"  data-i18n="exp.2.period">2017 — 2019 · 2+ anos</div>
+        <p class="exp-desc"      data-i18n="exp.2.desc">Início de carreira com base sólida…</p>
+        <div class="exp-achievements">
+          <div class="exp-ach" data-i18n="exp.2.a1">Manutenção e configuração de redes LAN/WAN, switches, roteadores e pontos de acesso</div>
+          <div class="exp-ach" data-i18n="exp.2.a2">Suporte técnico N2/N3 para estações Windows e servidores Linux</div>
+          <div class="exp-ach" data-i18n="exp.2.a3">Implantação e configuração de sistemas ERP para PMEs</div>
+          <div class="exp-ach" data-i18n="exp.2.a4">Montagem, manutenção preventiva e corretiva de equipamentos de TI</div>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div class="exp-role"    data-i18n="exp.3.role">Desenvolvedor Freelancer</div>
+        <div class="exp-company" data-i18n="exp.3.company">Projetos Independentes · Remote</div>
+        <div class="exp-period"  data-i18n="exp.3.period">2021 — Presente · Projetos variados</div>
+        <p class="exp-desc"      data-i18n="exp.3.desc">Desenvolvimento de sistemas e landing pages…</p>
+        <div class="exp-achievements">
+          <div class="exp-ach" data-i18n="exp.3.a1">Criação de sistemas CRUD completos com cadastro de clientes, tarefas e gestão de dados</div>
+          <div class="exp-ach" data-i18n="exp.3.a2">Desenvolvimento de landing pages responsivas com Bootstrap 5 e CSS avançado</div>
+          <div class="exp-ach" data-i18n="exp.3.a3">Scripts Python para automação e reconhecimento facial com OpenCV</div>
+          <div class="exp-ach" data-i18n="exp.3.a4">Projetos open source publicados no GitHub com documentação profissional</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-inner">
+    <div class="projects-header reveal">
+      <div class="section-label" data-i18n="proj.label">portfólio</div>
+      <h2 class="section-title" data-i18n-html="proj.title">Projetos que<br><em>eu construí</em></h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" onclick="filterProjects('all',this)"      data-i18n="proj.filter.all">Todos</button>
+        <button class="filter-btn"        onclick="filterProjects('web',this)"      data-i18n="proj.filter.web">Web Dev</button>
+        <button class="filter-btn"        onclick="filterProjects('security',this)" data-i18n="proj.filter.security">Segurança</button>
+        <button class="filter-btn"        onclick="filterProjects('python',this)"   data-i18n="proj.filter.python">Python</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card project-featured" data-cat="web">
+        <div class="project-body" style="padding:2rem">
+          <div class="project-top">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <a href="https://oggisec.com" target="_blank" class="project-link" title="Live">↗</a>
+              <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link" title="GitHub">⌥</a>
+            </div>
+          </div>
+          <div class="project-title" data-i18n="proj.0.title">Oggi Sec — Website Institucional</div>
+          <div class="project-desc"  data-i18n="proj.0.desc">Website institucional completo da Oggi Sec…</div>
+          <div class="project-stack">
+            <span class="project-tech">HTML5</span>
+            <span class="project-tech">CSS3</span>
+            <span class="project-tech">JavaScript</span>
+            <span class="project-tech">Bootstrap 5</span>
+          </div>
+        </div>
+        <div class="project-featured-visual">🌐</div>
+      </div>
+
+      <div class="project-card" data-cat="python">
+        <div class="project-top">
+          <div class="project-icon">👁️</div>
+          <div class="project-links">
+            <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title" data-i18n="proj.1.title">Reconhecimento Facial</div>
+        <div class="project-desc"  data-i18n="proj.1.desc">Script Python com reconhecimento facial em tempo real…</div>
+        <div class="project-stack">
+          <span class="project-tech">Python</span>
+          <span class="project-tech">OpenCV</span>
+          <span class="project-tech">dlib</span>
+          <span class="project-tech">Threading</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="web">
+        <div class="project-top">
+          <div class="project-icon">📋</div>
+          <div class="project-links">
+            <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title" data-i18n="proj.2.title">Lista de Tarefas App</div>
+        <div class="project-desc"  data-i18n="proj.2.desc">Aplicação de gerenciamento de tarefas…</div>
+        <div class="project-stack">
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS3</span>
+          <span class="project-tech">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="web">
+        <div class="project-top">
+          <div class="project-icon">👤</div>
+          <div class="project-links">
+            <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title" data-i18n="proj.3.title">CRUD de Clientes</div>
+        <div class="project-desc"  data-i18n="proj.3.desc">Sistema completo de cadastro de clientes…</div>
+        <div class="project-stack">
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS3</span>
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">LocalStorage</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="web">
+        <div class="project-top">
+          <div class="project-icon">🏋️</div>
+          <div class="project-links">
+            <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title" data-i18n="proj.4.title">Landing Page — Academia</div>
+        <div class="project-desc"  data-i18n="proj.4.desc">Landing page profissional com Bootstrap 5…</div>
+        <div class="project-stack">
+          <span class="project-tech">Bootstrap 5</span>
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS3</span>
+          <span class="project-tech">JS</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="web">
+        <div class="project-top">
+          <div class="project-icon">✖️</div>
+          <div class="project-links">
+            <a href="https://github.com/EvandroMoresco" target="_blank" class="project-link">↗</a>
+          </div>
+        </div>
+        <div class="project-title" data-i18n="proj.5.title">Jogo da Multiplicação</div>
+        <div class="project-desc"  data-i18n="proj.5.desc">Jogo educativo para ensino de tabuada…</div>
+        <div class="project-stack">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS3</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="https://github.com/EvandroMoresco" target="_blank" class="btn-secondary" data-i18n="proj.github">
+        Ver todos no GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="reveal">
+    <div class="section-label" data-i18n="certs.label">certificações</div>
+    <h2 class="section-title" data-i18n-html="certs.title">Conhecimento<br><em>validado</em></h2>
+  </div>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Harvard University</div>
+      <div class="cert-name">CS50: Introduction to Computer Science</div>
+      <div class="cert-year">cs50.harvard.edu</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">University of Maryland</div>
+      <div class="cert-name">Cybersecurity Specialization</div>
+      <div class="cert-year">Coursera</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">IBSEC</div>
+      <div class="cert-name">Segurança da Informação e Cibersegurança</div>
+      <div class="cert-year">IBSEC Brasil</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Acadi-TI</div>
+      <div class="cert-name">Desenvolvimento Web Full Stack</div>
+      <div class="cert-year">Acadi-TI</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">UNICESUMAR</div>
+      <div class="cert-name">Engenharia de Software</div>
+      <div class="cert-year">Bacharelado · Cursando</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">Exército Brasileiro</div>
+      <div class="cert-name">Linux Sysadmin — Infraestrutura Crítica</div>
+      <div class="cert-year">Serviço Militar</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">OWASP</div>
+      <div class="cert-name">OWASP Top 10 — Web Security</div>
+      <div class="cert-year">Oggi Sec</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-issuer">DevSecOps</div>
+      <div class="cert-name">Security in the Dev Lifecycle</div>
+      <div class="cert-year">Prática Contínua</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner reveal">
+    <div class="section-label" style="justify-content:center" data-i18n="contact.label">contato</div>
+    <h2 class="contact-title" data-i18n-html="contact.title">Vamos <em>trabalhar</em><br>juntos?</h2>
+    <p class="contact-subtitle" data-i18n-html="contact.subtitle">
+      Estou em busca de uma oportunidade CLT como Desenvolvedor Full Stack.<br>
+      Se você procura alguém que combina desenvolvimento com visão real de segurança, vamos conversar.
+    </p>
+    <div class="contact-links">
+      <a href="https://github.com/EvandroMoresco" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com/in/evandro-moresco" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://oggisec.com" target="_blank" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        oggisec.com
+      </a>
+      <a href="mailto:contato@oggisec.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        E-mail
+      </a>
+    </div>
+    <p style="font-family:var(--font-mono);font-size:0.75rem;color:var(--muted);letter-spacing:0.08em;">
+      <span data-i18n="contact.or">Ou me chame diretamente em →</span>
+      <a href="mailto:contato@oggisec.com" class="contact-email">contato@oggisec.com</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy"  data-i18n="footer.copy">© 2025 Evandro Moresco · Todos os direitos reservados</div>
+  <div class="footer-built" data-i18n-html="footer.built">Feito com <span>HTML · CSS · JS</span> · GitHub Pages</div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
