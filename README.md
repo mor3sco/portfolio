@@ -62,7 +62,7 @@ Nav shrink no scroll
 
 ## 📸 Preview
 
-![Preview do Portfólio](assets/img/preview.png)
+![Preview do Portfólio](/preview.png)
 
 ## 🚀 Executando Localmente
 
