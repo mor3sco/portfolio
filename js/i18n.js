@@ -129,12 +129,12 @@ const translations = {
     /* ── contact ── */
     "contact.label":    "contato",
     "contact.title":    "Vamos <em>trabalhar</em><br>juntos?",
-    "contact.subtitle": "Estou em busca de uma oportunidade CLT como Desenvolvedor Full Stack.<br>Se você procura alguém que combina desenvolvimento com visão real de segurança, vamos conversar.",
+    "contact.subtitle": "Estou em busca de uma oportunidade CLT/PJ remoto.<br>Se você procura alguém que combina desenvolvimento com visão real de segurança, vamos conversar.",
     "contact.or":       "Ou me chame diretamente em →",
 
     /* ── footer ── */
     "footer.copy":  "© 2025 Evandro Moresco · Todos os direitos reservados",
-    "footer.built": "Feito com <span>HTML · CSS · JS</span> · GitHub Pages",
+    "footer.built": "GitHub Pages",
   },
 
   en: {
