@@ -27,34 +27,27 @@ Atualmente sou fundador da Oggi Sec, empresa focada em soluções de tecnologia,
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Front-end
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
-- React
+## Linguagens & Markup
 
-### Back-end
-- PHP
-- Node.js
-- Python
+HTML5
+CSS3 puro
+JavaScript (vanilla, sem frameworks)
 
-### Banco de Dados
-- MySQL
-- Firebase
+## Fontes (Google Fonts)
 
-### DevOps & Ferramentas
-- Git
-- GitHub
-- Docker
-- Linux
+Syne — títulos e display
+JetBrains Mono — textos de código e labels
+Outfit — corpo do texto
 
-### Segurança da Informação
-- Pentest
-- Hardening
-- Gestão de Vulnerabilidades
-- Análise de Riscos
-- Segurança Web
+## Funcionalidades JS implementadas manualmente
+
+Sistema de i18n (PT/BR ↔ EN) com localStorage — arquivo js/i18n.js
+Typed text effect — efeito de digitação no hero
+Custom cursor com anel de lag
+Scroll reveal com IntersectionObserver
+Filtro de projetos por categoria
+Abas de experiência (tabs)
+Nav shrink no scroll
 
 ## ✨ Funcionalidades
 
