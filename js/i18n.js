@@ -262,12 +262,12 @@ const translations = {
     /* ── contact ── */
     "contact.label":    "contact",
     "contact.title":    "Let's <em>work</em><br>together?",
-    "contact.subtitle": "I'm looking for a full-time opportunity as a Full Stack Developer.<br>If you're looking for someone who combines development with real security expertise, let's talk.",
+    "contact.subtitle": "I am looking for a full-time or contract job opportunity.<br>If you're looking for someone who combines development with real security expertise, let's talk.",
     "contact.or":       "Or reach me directly at →",
 
     /* ── footer ── */
     "footer.copy":  "© 2025 Evandro Moresco · All rights reserved",
-    "footer.built": "Built with <span>HTML · CSS · JS</span> · GitHub Pages",
+    "footer.built": "GitHub Pages",
   }
 };
 
